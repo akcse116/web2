@@ -1,0 +1,85 @@
+body {
+    font-family: "Open Sans", Arial, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("http://www.cbconstructioncleveland.co.uk/wp-content/uploads/2015/12/Steel-Fabrication-North-East-CB-Construction.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+}
+a:link {
+    text-decoration: none;
+}
+a {
+    color: inherit;
+}
+#menu {
+    padding-top: 2%;
+    padding-left: 5%;
+    text-align: left;
+    color: gainsboro;
+    background-color: black;
+}
+#current {
+    text-decoration: underline;
+}
+li:hover {
+    color: #ffb814;
+}
+#templogo{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+#tlu {
+    padding: 0;
+    margin: .1%;
+}
+.bodyImg {
+    width: 15%;
+    border-radius: 5px;
+    float: left;
+    margin-right: .8%;
+}
+.buffer {
+    margin: 10%;
+}
+.bodyDivHead {
+    border-radius: 15px;
+    margin-left: 10%;
+    padding-left: .5%;
+    padding-right: .5%;
+    text-align: justify;
+    color: gainsboro;
+    width: 70%;
+    font-size: 35px;
+}
+.bodyDiv {
+    border-radius: 15px;
+    color: gainsboro;
+    text-align: justify;
+    width: 70%;
+    margin-left: 8%;
+    padding-left: .5%;
+    padding-right: .5%;
+    font-size: 25px;
+    background: rgba(0,0,0,.3);
+    opacity: 10%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1%;
+}
+li {
+    margin-top: 2%;
+    margin-right: 2%;
+    /*margin-left: 0;*/
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
