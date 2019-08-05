@@ -14,25 +14,37 @@
                 background-attachment: fixed;
                 background-position: left top;
             }
+
             a:link {
                 text-decoration: none;
             }
             a {
                 color: inherit;
             }
+
+            h2{
+                margin: 0;
+            }
+
             #menu {
                 padding-top: 2%;
                 padding-left: 5%;
                 text-align: left;
                 color: #dcdcdc;
                 background-color: black;
+                border-bottom: 4px solid #878787;
             }
             #current {
                 text-decoration: underline;
             }
-            li:hover {
+            .opts:hover {
                 color: #ffb814;
             }
+
+            #logo{
+                width: 30%;
+            }
+
             #templogo{
                 text-transform: uppercase;
                 margin: 0;
@@ -43,43 +55,52 @@
                 margin: .1%;
             }
             .bodyImg {
-                width: 15%;
+                width: 20%;
                 border-radius: 5px;
                 float: left;
-                margin-right: .8%;
+                margin-right: 2.5%;
             }
 
-            .container{
-                margin: 60px 0;
+            .service{
+                border-radius: 15px;
+                width:70%;
+                background: rgba(54,69,79,.8);
+                margin:130px auto;
+                padding:20px 0;
+                overflow: hidden;
+                border: 2px solid black;
             }
 
-            .svc{
-                margin:60px 0;
-                padding:10px 0;
-            }
 
             .svc_img {
                 border-radius: 15px;
-                margin-left: 10%;
-                padding-left: .5%;
-                padding-right: .5%;
+                margin:0 10px 0 50px;
                 text-align: justify;
                 color: #dcdcdc;
                 width: 70%;
                 font-size: 35px;
                 float:left;
             }
+
+            .svc_img h2{
+                font-size: 2em;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                margin: 0 0 20px 0;
+                padding: 80px 0 0 0;
+
+            }
+
             .svc_text {
+                border: 2px dotted #ffb814;
                 border-radius: 15px;
                 color: #dcdcdc;
                 text-align: justify;
-                width: 70%;
-                margin-left: 8%;
-                padding-left: .5%;
-                padding-right: .5%;
+                width: 90%;
+                margin: 20px auto 0 35px;
+                padding: 15px;
                 font-size: 25px;
                 font-weight: 600;
-                background: rgba(0,0,0,.3);
+                background: rgba(0,0,0,.6);
                 opacity: 10%;
                 float: left;
             }
@@ -93,9 +114,7 @@
                 text-align: justify;
             }
             .opts {
-                margin-top: 2%;
-                margin-right: 2%;
-                /*margin-left: 0;*/
+                margin: 2% 2% 0 0;
                 display: inline-block;
                 text-align: center;
                 font-weight: bold;
@@ -115,14 +134,35 @@
                 display: block;
             }
 
+            .only{
+                font-weight: 800;
+                text-decoration: underline;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+
+            #onsite{
+                margin: 0 0 0 30px;
+                padding: 4px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                background-image: linear-gradient(#ffb814, #f70202);
+                text-shadow: -1px 0 #fc1111, 0 1px #fc1111, 1px 0 #fc1111, 0 -1px #fc1111;
+
+            }
+
             #footer{
                 bottom: 0;
                 clear: both;
-                padding: 40px 0;
-                margin: 30px 0;
+                padding: 60px 0;
+                margin: 30px 0 0 0;
                 width: 100%;
                 color: grey;
                 font-weight: 600;
+                background: linear-gradient(
+                        to bottom,
+                        rgba(255, 0, 0, 0),
+                        black
+                )
             }
         </style>
         <title>HOT SHOTS - HOME</title>
@@ -132,10 +172,12 @@
 
 
         <div id="menu">
-            <a href="/">
-            <h1 id="templogo">hot shots</h1>
-            <p id="tlu">Garage.Welding.Fabrication</p>
-            </a>
+            <div id="logo">
+                <a href="/">
+                <h1 id="templogo">hot shots</h1>
+                <p id="tlu">Garage.Welding.Fabrication</p>
+                </a>
+            </div>
 
             <!--
 
@@ -166,10 +208,9 @@
            m       m    o o o    d d d     s s s s s
 
         -->
-        <div class="container">
-        <div class="svc">
+        <div class="service">
             <div class="svc_img">
-                <img class="bodyImg" src="https://cdn3.vectorstock.com/i/1000x1000/02/27/automobile-car-parts-seamless-pattern-vector-13620227.jpg"/>
+                <img class="bodyImg" src="https://cdn3.vectorstock.com/i/1000x1000/02/27/automobile-car-parts-seamless-pattern-vector-13620227.jpg">
                 <h2>Mods</h2>
 
             </div>
@@ -184,19 +225,18 @@
                         <ol>
                             <li class="modsL">Turbos</li>
                             <li class="modsL">Superchargers</li>
+                            <li class="modsL">Other engine upgrades</li>
                             <li class="modsL">Exhaust</li>
-                            <li class="modsL">bolt-ons</li>
-                            <li class="modsL">custom installs</li>
-                            <li class="modsL">engine upgrades</li>
-                            <li class="modsL">suspension</li>
-                            <li class="modsL">braking</li>
+                            <li class="modsL">Bolt-ons</li>
+                            <li class="modsL">Custom installs</li>
+                            <li class="modsL">Suspension</li>
+                            <li class="modsL">Braking</li>
                         </ol>
                         <br>
                     <p class="modsP">
                         that's what we're here for.
                     </p>
             </div>
-        </div>
         </div>
 
 
@@ -211,28 +251,42 @@
 
         -->
 
-        <div class="svc">
+        <div class="service">
             <div class="svc_img">
                 <img class="bodyImg" src="https://i.pinimg.com/originals/9e/ae/fb/9eaefb58568606d554b0e8d326c5644b.jpg">
                 <h2>Welding</h2>
             </div>
             <div class="svc_text">
-                <p>
-                    Accepting small welding jobs. Our focus is mainly automotive but able to perform other small jobs. Exhaust, intake, brackets, bracing components.<br><br><b>ON SITE ONLY.</b>
+                <p class="modsP">
+                    Accepting small welding jobs. Our focus is mainly automotive but able to perform other small jobs.
+                    Exhaust, intake, brackets, bracing components.
+
+                <br>
+                <br>
+                <ol>
+                    <li class="modsL">Steel</li>
+                    <li class="modsL">Stainless Steel</li>
+                    <li class="modsL">Aluminum</li>
+                    <li class="modsL">Intercooler piping</li>
+                    <li class="modsL">Exhaust</li>
+                    <li class="modsL">Pie Cuts</li>
+                </ol>
+
+                    <br><br><span class="only" id="onsite">on site only</span>
                 </p>
             </div>
 
-        </div>
 
             <div class="svc_img" hidden>
                 <h2>Drivetrain</h2>
             </div>
 
             <div class="svc_text" hidden>
-                <p><img class="bodyImg" src="https://cfc7329ad537523a5de1-b21544d490ba797ec9de9d17e947de3d.ssl.cf1.rackcdn.com/m7003m6266_3178.jpg">
+                <p class="modsP"><img class="bodyImg" src="https://cfc7329ad537523a5de1-b21544d490ba797ec9de9d17e947de3d.ssl.cf1.rackcdn.com/m7003m6266_3178.jpg">
                     Tremec upgrades and rebuilds. Replace worn parts. Upgrade components
                 </p>
             </div>
+        </div>
 
     </body>
     <div id="footer">
